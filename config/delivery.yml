@@ -37,7 +37,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: index.docker.io/ko2syseng/tanzu-web-app-tap-install@sha256:ccf985162eb508b386e4018cb5a6f1d574c26eac3a6d85a2d8cf705807460936
+        image: index.docker.io/ko2syseng/tanzu-web-app-tap-install@sha256:668f0b3f6b2c6a295d3ccefcfddd9bc9773ebc9e967bf66e9a7b522825a0d465
         name: workload
         ports:
         - containerPort: 8080
