@@ -1,10 +1,10 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: ko2-demo-acc
+  name: tap-demo-acc
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: ko2-demo-acc
+    app.kubernetes.io/part-of: tap-demo-acc
 spec:
   env:
   - name: APP_MESSAGE
@@ -15,6 +15,6 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      url: https://github.com/serpiko2/ko2-demo-acc
+      url: https://github.com/serpiko2/tap-demo-acc
       ref:
         branch: main
